@@ -1,0 +1,1046 @@
+/*   
+Theme Name: VCS Starter
+Theme URI: http://www.vilniuscoding.lt/
+Description: VCS Wordpress Theme
+Author: Mindaugas Degutis
+Author URI: http://www.degutis.lt
+Version: 1.0
+Text Domain: vcs-starter
+Domain Path: /languages
+*/
+
+* { 
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(62, 62, 62);
+} 
+
+.nematomi-blokai {
+    display: none;
+}
+
+.nematomi-blokai2 {
+    display: none;
+}
+/* HEADINGS
+--------------
+*/
+.heading-igudziai {
+    color: white;
+    padding-top: 50px;
+}
+h2 { 
+    margin-left: 25%; 
+    margin-bottom: 50px;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgb(251, 100, 112);
+    content: " ";
+    width: 70px;
+    margin-top: 10px;
+}
+h4 {
+    color: white;
+    margin-left: 5px;
+    padding-top: 10px;
+}
+h5 {
+    margin-top: 15px;
+    padding: 0px;
+    color: white;
+}
+.heading-container h2 {
+    margin: 0px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Meniu Burgeris
+--------------
+*/
+
+button.burger {
+ border: none;
+ background: none;
+ display: none ;
+background-color: rgb(53, 53, 65);
+border: none;
+}
+span.bar {
+  border: 2px solid white;
+  margin: 3px 0;
+  border-radius: 15px;
+  width: 40px;
+  display: block;
+}
+
+/* HEADERIS
+--------------
+*/
+
+.kairysis-blokas {
+    height: 100vh;
+    width: 220px;
+    position: fixed;
+    background-color: rgb(53, 53, 65); 
+    z-index: 999;
+    top: 0;
+}
+.nav {
+    background-color: rgb(53, 53, 65);
+}
+.header_menu {
+    margin: 0px;
+}
+.header_menu li {
+    color: white;
+    list-style: none;
+    padding: 20px;
+    border-bottom: 2px solid rgb(48, 48, 60);
+}
+.header_menu li a {
+   text-decoration: none; 
+    color:white;
+}
+.header_menu li:hover {
+    background-color: rgb(224, 224, 224);
+    color: rgb(48, 48, 60);
+    transition: 0.5s;
+} 
+li {
+    list-style: none;
+  }
+
+/* BACKGROUND COVER BLOKAS
+--------------
+*/
+.cover-konteineris {
+    margin-left: 220px;
+    background-color: rgb(53, 53, 65);
+    padding-top: 70px;
+    padding-bottom: 60px;
+    text-align: center;
+    background-repeat: repeat-x;
+}
+.cover-konteineris h1 {
+    margin: 0px;
+    color: white;
+}
+.para p {
+    padding-top: 15px;
+    padding-bottom: 60px;
+    margin: 0px;
+    color: white;
+}
+.button { 
+    background-color: rgb(251, 100, 112);  
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 5% ;
+    color: white;
+    margin-bottom: 20px;    
+}
+/* APIE-MANE BLOKAS
+--------------
+*/
+.apie-mane-konteineris {  
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 220px;
+}
+.apie-mane-konteineris p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.pilka-linija {
+    height: 2px;
+    border-bottom: 2px solid rgb(249, 249, 249);
+    width: 65%;
+    margin-left: 24.5%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.container-about-me {
+    width: 350px;
+    height: auto;
+    margin-left: 2%;
+    margin-top: 50px;  
+    }
+.duomenys2 {
+    padding: 0px;
+}
+.duomenys2 li {
+    background-color: rgb(249, 249, 249);
+    border-bottom: 1px solid rgb(224, 224, 224);
+    padding: 7px;
+}
+.nuotrauka {
+    width: 30%;
+    margin-right: 23px;
+    margin-top: 40px;
+}
+.nuotrauka img{
+    width: 100%;
+    height: auto;
+}
+
+/* DARBO PATIRTIS
+--------------
+*/
+.darbo-patirtis {
+    margin-left: 220px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.timeline {
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    left:50%;
+    background-color: black;
+    z-index: 0;
+}
+
+/* TIMELINE DOTS
+--------------
+*/
+
+.red-dot {
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(251, 100, 112);
+    border: 1.5px solid rgb(53, 53, 65);
+}
+.dot-border {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(53, 53, 65);
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 49%; 
+}
+.red-dot2 {
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(251, 100, 112);
+    border: 1.5px solid rgb(53, 53, 65);  
+}
+.dot-border2 {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(53, 53, 65);
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 49.%;
+    top: 30%;  
+}
+.red-dot3 {
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(251, 100, 112);
+    border: 1.5px solid rgb(53, 53, 65);  
+}
+.dot-border3 {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(53, 53, 65);
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 49.%;
+    top: 55%; 
+}
+.red-dot4 {
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(251, 100, 112);
+    border: 1.5px solid rgb(53, 53, 65);
+}
+.dot-border4 {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(53, 53, 65);
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 49.%;
+    top: 94%
+}
+.red-dot5 {
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(251, 100, 112);
+    border: 1.5px solid rgb(53, 53, 65);    
+}
+.dot-border5 {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(53, 53, 65);
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 49.%;
+    top: 0%  
+}
+.red-dot6 {
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(251, 100, 112);
+    border: 1.5px solid rgb(53, 53, 65);
+}
+.dot-border6 {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(53, 53, 65);
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 49.%;
+    top: 50%
+}
+.red-dot7 {
+    display: block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: rgb(251, 100, 112);
+    border: 1.5px solid rgb(53, 53, 65); 
+}
+.dot-border7 {
+    display: block;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 1.5px solid rgb(53, 53, 65);
+    position: absolute;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 49.%;
+    top: 93% 
+}
+/* CHATBUBBLES
+--------------
+*/
+
+.chat-bubbles-left {
+   width: 350px;
+   background-color: rgb(53, 53, 65);
+   position: relative;
+   -moz-border-radius:    6px;
+   -webkit-border-radius: 6px;
+   border-radius:         6px;
+   margin-top: 5px;
+}
+.chat-bubbles-left:before {
+   content:"";
+   position: absolute;
+   left: 100%;
+   top: 10px;
+   width: 0;
+   height: 0;
+   border-top: 6px solid transparent;
+   border-left: 35px solid rgb(53, 53, 65);
+   border-bottom: 15px solid transparent;
+}
+.chat-bubbles-right {
+   width: 350px;
+   background-color: rgb(53, 53, 65);
+   position: relative;
+   -moz-border-radius:    6px;
+   -webkit-border-radius: 6px;
+   border-radius:         6px;
+   margin-top: 5px;
+}
+.chat-bubbles-right:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 75px;
+   width: 0;
+   height: 0;
+   border-top: 15px solid transparent;
+   border-right: 35px solid rgb(53, 53, 65);
+   border-bottom: 5px solid transparent;
+} 
+.chat-bubbles-left p:nth-child(2) {
+    color: rgb(251, 100, 112);
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.chat-bubbles-left p:nth-child(3) {
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+.chat-bubbles-right p:nth-child(2) {
+    color: rgb(251, 100, 112);
+    font-size: 1.1rem;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+.chat-bubbles-right p:nth-child(3) {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+.bubble1 {
+   margin-top: 0px;  
+}
+.bubble2 {   
+    margin-top: 60px;
+}
+.blokai-desineje2 .bubble2 {
+margin-top: 90px;
+}
+.bubble3 {
+    margin-top: 110px;  
+}
+.bubble4 {
+    margin-top: 140px; 
+}
+.bubble5 {
+    margin-top: 120px;
+}
+.bubble6 {
+    margin-top: 130px;
+}
+.bubble6 p:nth-child(2) {
+    color: rgb(251, 100, 112);
+    font-size: 1.1rem;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+.bubble6 p:nth-child(3) {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+.bubble7 {
+    margin-top: 115px;
+}
+.chat-bubbles-left-last{
+    width: 350px;
+   height: 110px;
+   background-color: rgb(53, 53, 65);
+   position: relative;
+   -moz-border-radius:    6px;
+   -webkit-border-radius: 6px;
+   border-radius:         6px;
+   margin-top: 5px;
+}
+.blokai-kaireje2 .chat-bubbles-left-last:before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    bottom: 10px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 35px solid rgb(53, 53, 65);
+    border-bottom: 15px solid transparent;
+}
+
+/* ISSILAVINIMAS
+--------------
+*/
+
+.issilavinimas { 
+    margin-left: 220px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+
+/* IGUDZIAI
+--------------
+*/
+
+.section-igudziai {
+    background-color: rgb(29, 29, 29);
+    padding-bottom: 50px;
+}
+.igudziai-container {
+    display: flex;
+    margin-left: 220px;
+    justify-content: space-around;
+}
+.igudziai-kaireje {
+   width: 350px; 
+}
+.igudziai-desineje {
+   width: 350px; 
+}
+.igudziai {
+    padding-bottom: 20px;
+}
+.igudziai p {
+    display: inline;
+    float: right;
+    color: white;
+    }
+    
+ /* ProgressBarContainer
+--------------
+*/   
+.progress-bar-container1 {
+   
+    background-color: rgb(188, 188, 190);
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+}
+.progress-bar-fill {
+    display:block;
+    height: 15px;
+    background-color: rgb(251, 100, 112);
+    border-radius: 10px;   
+}
+.progress-bar-fill1 {
+    display:block;
+    height: 15px;
+    background-color: rgb(251, 100, 112);
+    width: 90%;
+    border-radius: 10px;
+}
+.progress-bar-container2 {
+    width: 350px;
+    background-color: rgb(188, 188, 190);
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.progress-bar-fill2 {
+    display:block;
+    height: 15px;
+    background-color: rgb(251, 100, 112);
+    width: 80%;
+    border-radius: 10px;
+}
+.progress-bar-container3 {
+    width: 350px;
+    background-color: rgb(188, 188, 190);
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.progress-bar-fill3 {
+    display:block;
+    height: 15px;
+    background-color: rgb(251, 100, 112);
+    width: 50%;
+    border-radius: 10px;
+}
+.progress-bar-container4 {
+   
+    background-color: rgb(188, 188, 190);
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.progress-bar-fill4 {
+    display:block;
+    height: 15px;
+    background-color: rgb(251, 100, 112);
+    width: 40%;
+    border-radius: 10px;
+}
+.progress-bar-container5 {
+    width: 350px;
+    background-color: rgb(188, 188, 190);
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.progress-bar-fill5 {
+    display:block;
+    height: 15px;
+    background-color: rgb(251, 100, 112);
+    width: 60%;
+    border-radius: 10px;
+}
+.progress-bar-container6 {
+    width: 350px;
+    background-color: rgb(188, 188, 190);
+    height: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.progress-bar-fill6 {
+    display:block;
+    height: 15px;
+    background-color: rgb(251, 100, 112);
+    width: 50%;
+    border-radius: 10px;
+}
+/* Kontaktai
+--------------
+*/
+.inputai li input {
+    border: 1px solid rgb(29, 29, 29);
+    margin-bottom: 20px;
+    height: 25px;
+    width: 300px;
+    color: grey;
+}
+.inputai li textarea {
+  border: 1px solid rgb(29, 29, 29); 
+    width: 300px;
+    height: 100px;
+    color: grey;
+}
+.kontaktai {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-left: 220px;
+    position: relative;
+}
+.palikite-zinute {
+    width: 350px;
+}
+    .kontaktine-info {
+     width: 350px;   
+}
+.palikite-zinute p {
+    padding-bottom: 20px ;
+    color: rgb(29, 29, 29);
+}
+.button2 {  
+    background-color: rgb(251, 100, 112);  
+    border: none;
+    height: 25px;
+    width: 70px;
+    border-radius: 5%;
+    color: white;
+    right: 100%;  
+}
+.adres-ikona {
+    display: flex;
+    align-items: center;
+}
+.adres-ikona div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pasto-ikona {
+   display: flex;
+   align-items: center;  
+}
+
+.pasto-ikona div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.telefonas-ikona {
+    display: flex;
+   align-items: center;  
+}
+.telefonas-ikona div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.kontaktine-info i {
+    font-size: 3em;
+    color: rgb(53, 53, 65);
+}
+.kontaktine-info p {
+    color: rgb(53, 53, 65);
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.text p:nth-child(2) {   
+    font-style: italic;
+    color: rgb(141, 141, 141);
+}
+.vertikali-linija {
+    height: 100%;
+    width: 1.5px;
+    position: absolute;
+    left: 50%;
+    background-color: rgb(204, 204, 204);
+}
+.nuorodos {
+    margin-left: 220px;
+    display: flex;
+    justify-content: center;
+}
+.nuorodos i {
+    font-size: 2rem;
+    color: rgb(53, 53, 65);  
+}
+
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+
+@media only screen and (max-width: 1160px) {
+    .chat-bubbles-right {
+        width: 300px;
+    }
+    .chat-bubbles-left {
+        width: 300px;
+    }
+    .progress-bar-container {
+        width: 300px;
+    }
+    .igudziai {
+        width: 300px;
+    }
+    .container-about-me {
+        width: 300px;
+    }
+    .chat-bubbles-left-last {
+        width: 300px;
+    }
+    h2 {
+        margin-left: 27%
+    }
+}
+
+@media only screen and (max-width: 1058px) {
+    .timeline {
+        display: none;
+    }
+    
+    .dot-border {
+        display: none;
+    }
+    .dot-border2 {
+        display: none;
+    }
+    .dot-border3 {
+        display: none;
+    }
+    .dot-border4 {
+        display: none;
+    }
+    .dot-border5 {
+        display: none;
+    }
+    .dot-border6 {
+        display: none;
+    }
+    .dot-border7 {
+        display: none;
+    }
+    .chat-bubbles-left:before {
+        display: none;
+    }
+    .chat-bubbles-right:before {
+        display: none;
+    }
+    .bubble7 {
+        margin-top: 120px;
+    }
+    .blokai-kaireje2 .chat-bubbles-left-last:before {
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 995px) {
+    
+     .nematomi-blokai {
+    display: block;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 30%;     
+}
+    .nematomi-blokai p:nth-child(2n) {
+    color: rgb(251, 100, 112);
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+    .nematomi-blokai p:nth-child(3n) {     
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 0.8rem;
+    }  
+.nematomi-blokai2 {
+    display: block;
+    flex-direction: column;
+    margin-left: 30%;
+    width: 90%;
+}    
+      .nematomi-blokai2 p:nth-child(2n) {
+    color: rgb(251, 100, 112);
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+    .nematomi-blokai2 p:nth-child(3n) {     
+    color: white;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 0.8rem;
+    }  
+  .bubble {
+    width: 350px;
+      height: 110px;
+   height: auto;
+   background-color: rgb(53, 53, 65);
+    margin-top: 120px;
+  -moz-border-radius:    6px;
+   -webkit-border-radius: 6px;
+   border-radius:         6px;
+   margin-top: 5px;
+    margin-bottom: 20px;
+}
+    /*....................*/
+    
+    .igudziai-container {
+        flex-direction: column;
+        margin-left: 45%;
+    }
+    .igudziai {
+        padding-bottom: 0px;
+    }
+   .kontaktai {
+    flex-direction: column;
+       margin-left: 45%
+    }
+    .palikite-zinute {
+        margin-bottom: 20px;
+    }
+    .vertikali-linija {
+        display: none;
+    }
+    .apie-mane-konteineris {
+        flex-direction: column-reverse;
+    }
+    .nuotrauka {
+        width: 40%;
+    }
+     .igudziai {
+        width: 350px;
+    }
+     .progress-bar-container {
+        width: 350px;
+    }
+    .container-about-me {
+        width: 350px;
+}
+    .blokai-kaireje {
+        display: none;
+    }
+    .blokai-desineje {
+        display: none;
+    }
+    .blokai-kaireje2 {
+        display: none;
+    }
+    .blokai-desineje2 {
+        display: none;
+    }
+    h2 {
+        margin-left: 45%
+    }
+    .pilka-linija {
+    height: 2px;
+    border-bottom: 2px solid rgb(249, 249, 249);
+    width: 40%;
+    margin-left: 45%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    }
+    .issilavinimas {
+        margin-left: 20%;
+        margin-bottom: 50px;
+    }
+    .darbo-patirtis {
+        margin-left: 20%;
+    }
+    
+    .pilka-linija {
+        margin-top: 50px;
+    }
+
+@media only screen and (max-width: 670px) {
+    
+    .cover-konteineris {
+        margin: 0px;
+       margin-bottom: 20px;
+    } 
+    .issilavinimas {
+        margin-left: 10%;
+    }
+    .igudziai-container {
+    margin-left: 15%;
+    }
+    .darbo-patirtis {
+        margin-left: 0px; 
+    }
+    .apie-mane-konteineris {
+        margin-left: 0%; 
+    }
+    h2 {
+        margin-left: 15%;
+    }
+    .apie-mane-konteineris {
+       margin-left: 10%;  
+    }
+    
+    .issilavinimas {
+        margin-left: 0;
+    }
+     .kairysis-blokas {
+        position: relative;
+         width: 100%;
+         height: 8vh;
+         position: fixed;
+    }
+    .apie-mane-konteineris {
+        margin-left: 0px;
+    }
+    .kontaktai {
+        margin-left: 15%;
+    }
+    .nuorodos {
+        margin-left: 0px;
+    }
+    button.burger {
+    display: block;
+    right: 20px;
+    top: 20px;
+    position: absolute;
+    z-index: 1000;
+    }
+     .hide {
+        display: none;
+    }
+     .container-about-me {
+        width: 65%;
+         margin-left: 0px;
+    }
+    .nematomi-blokai {
+        margin-left: 15%;
+    }
+     .nematomi-blokai2 {
+        margin-left: 15%;        
+    }
+    .bubble {
+        width: 85%;
+        height: auto;
+    }
+    .igudziai {
+        width: 90%;
+    }
+    .progress-bar-container {
+    width: 100%;
+    background-color: rgb(188, 188, 190);
+    height: 15px;
+    border-radius: 10px;
+    }
+    .progress-bar-fill1 {
+    display:block;
+    height: 15px;
+    background-color: rgb(251, 100, 112);
+    width: 90%;
+    border-radius: 10px;
+    }
+    .igudziai-kaireje {
+        width: 90%;
+    }
+    .igudziai-desineje {
+        width: 90%;
+    }
+.igudziai p {
+    display: inline;
+    float: right;
+    color: white;
+    }
+    .nuotrauka {
+        width: 55%;
+    }
+
+    .palikite-zinute {
+        width: 65%;
+    }
+    .kontaktine-info {
+        width: 85%;
+    }
+.inputai li input {
+    border: 1px solid rgb(29, 29, 29);
+    margin-bottom: 20px;
+    height: 25px;
+    width: 100%;
+    color: grey;
+    }
+.inputai li textarea {
+  border: 1px solid rgb(29, 29, 29); 
+    width: 100%;
+    height: 100px;
+    color: grey;
+    }
+    .nav ul li:nth-child(6) {
+        border: none;
+    }
+    .pilka-linija {
+    height: 2px;
+    border-bottom: 2px solid rgb(249, 249, 249);
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    }  
+    }
+    }
+}
